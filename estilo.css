@@ -13,11 +13,11 @@ header{background-image:url("imagenes/header2.png");
 #titulo{position:absolute;
        width:40%;
        top:125px;
-
        left:0px;
        right:0px;
        margin-left:auto;
        margin-right:auto;
+       color: darkmagenta;
        }
 div.polaroid {
        float:left;
