@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Griffy&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" sizes="32x32" href="imagenes/favicon.gif">
+    <title>El Recolector de Almas</title>
+    <style>
+    #wrapper {position: relative; /*el wrapper se mnueve para centrarse*/
+              background-image: url("imagenes/HDHalloween.jpg");
+              width:800px;
+              height:600px;
+              margin:auto;
+              /*border-radius: 0%;*/
+              box-shadow: rgb(35, 17, 16),20px,20px,20px
+              rgb(35, 17, 16),-20px,20px,20px
+              rgb(35, 17, 16),20px,-20px,20px
+              rgb(35, 17, 16),-20px,-20px,20px;
+    }
+    body{background-color:black;
+        font-family: 'Griffy', cursive;
+    }
+     h1{position: absolute;/*lo que va dentro se mueve con el*/
+        left:470px;
+        top:30px;
+        color:rgb(16, 71, 16);
+        visibility: hidden;
+        }
+    #p1 {position: absolute; /*Texto puerta*/
+        top:420px;
+        left:310px;
+        color: white;
+      }
+    #p2 {position: absolute;/*Texto calabaza*/
+        top: 440px;
+        left: 650px;
+        color: white;
+    }
+      #door{position:absolute; /*La puerta*/
+            width:25px;
+            height:70px;
+            top:360px;
+            left:350px;
+            border:1px transparent white;
+            }
+      #fear{position:absolute; /*La calabaza*/
+        width:35px;
+        height:35px;
+        top:423px;
+        left:673px;
+        border:1px transparent white;
+        border-radius: 50%;
+        }    
+        #thresh{visibility: hidden;
+                top: 100px;
+                right: -20px;
+                position: absolute;
+                /*posicionamos el gift donde queremos*/
+        }
+        #casa{visibility: hidden;
+                height: 90%;
+                width: 50%;
+                /*ajustamos su tamaño*/
+        }
+</style>
+<script>
+        function mostrar(id){
+            document.getElementById(id).style.visibility="visible";
+        }
+        function ocultar(id){
+            document.getElementById(id).style.visibility="hidden";
+        }
+        function sonar(id){
+            document.getElementById(id).play();
+        }
+        function parar(id){
+            document.getElementById(id).pause();
+        }
+</script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>
+           The chain warder.
+        </h1>
+        <p id="p1">
+            Enter in the house...
+        </p>
+        <p id="p2">
+            Don't touch this pumpkin
+        </p>
+            <div id=door ondblclick="mostrar('casa')"
+            onclick="ocultar('casa')"></div> 
+            <!--Tocas la puesta y apareces dentro-->
+            <!--Tocas la puerta para salir-->
+
+            <div id=fear ondblclick="mostrar('thresh');sonar('canto')"; 
+             onclick="ocultar('thresh');parar('canto')"></div> 
+             <!--Tocas la calabaza y sale imagen y musica -->
+             <!--La vuelves a tocar desaparece y se para la musica-->
+           
+
+            <img id="thresh" src="imagenes/thres.lento.gif"> <!--Gif de thresh-->
+            <img id="casa" src="imagenes/original.gif">      <!--Gif del interior de la casa-->
+            <audio id="canto">                               <!--Archivo de sonido-->
+                <source type="audio/mp3" src="sonidos/thresh.mp3">
+            </audio>
+    </div>
+</body>
+</html>

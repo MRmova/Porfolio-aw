@@ -1,0 +1,20 @@
+
+body {background-image:url("fondecocina.jpg") ;    
+      background-size: cover;
+}
+#wrapper{
+    background-color:white;
+    width: 600px;
+    margin:auto;
+    padding:1vw;
+    border:2px solid black ;
+}
+h1 {text-align: center;
+    color:rosybrown;
+}
+h2 {text-align:left;
+    color:rgb(231, 93, 50);
+    }
+table {border: 1px solid black;
+
+}
