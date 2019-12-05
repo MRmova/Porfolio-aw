@@ -1,6 +1,7 @@
 
 body {background-image:url("fondecocina.jpg") ;    
       background-size: cover;
+      display: block;
 }
 #wrapper{
     background-color:white;
@@ -10,13 +11,24 @@ body {background-image:url("fondecocina.jpg") ;
     padding:1vw;
     border:2px solid black ;
     overflow:scroll ;
+    display: block;
 }
 h1 {text-align: center;
     color:rosybrown;
+    display: block;
 }
 h2 {text-align:left;
     color:rgb(231, 93, 50);
+    display: block;
     }
-table {border: 1px solid black;
+table {border: 1px solid black;}
+iframe{display: block;
+       float: right;
+       width: 30vw;
+       height: 22.5vw;
+}
 
+@media only screen and (max-width:500px){
+    #wrapper{width:100%;
+    }
 }
