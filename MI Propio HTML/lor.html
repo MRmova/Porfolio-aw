@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/estilo2.css" rel="stylesheet">
+    <title>Trabajo Jesus.G.J. LOR</title>
+    <script src="Javascripts/truescrip.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="topnav" id="mitopnav">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="#units">Unidades</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Hechizos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#spell">Fugaz</a>
+                        <a href="#spell">Veloz</a>
+                        <a href="#spell">Lento</a>
+                    </div>
+            </div>
+            <a href="#more">Informacion</a>
+        </nav>
+        <header id="inicio">
+            <div class="foto-hero" >
+                <h3 class="texto-hero">
+                Ambientado en el universo de League of Legends, Legends of Runeterra es un juego de cartas de estrategia en el que<br> solo la destreza, la creatividad y la astucia os conducirán al éxito.</h3>  
+            </div>
+        </header>
+
+        <div class="final"></div>
+
+        <section id="units">
+
+            <div class="mitad" id="champ">
+                <h1 class="titulo">Los Campeones</h1>
+                <p>Las cartas de campeones son de las mas poderosas del juego.</p>
+                <p>Cada campeon tiene una mecanica unica que lo hace mas poderoso.</p>
+                <p>Pero para alcanzar todo su potencial tendremos que esperar al momento oportuno para subir los de nivel</p>
+                <p>La trasformacion puede cambiar las tornas de la partida.</p>
+                <p>Conseguid poderosas habilidades.</p>
+                <p>Cambiar la batalla con un combo.</p>
+                <p> romped las reglas y descubrid nuevas formas de ganar.</p>
+            </div>
+
+            <div class="mitad" id="adeptos">
+                <h1 class="titulo">Los adeptos</h1>
+                <p>mas contenido</p>
+                <p>super contenido </p>
+                <p>exitante</p>
+            </div>
+
+        </section>
+
+        <!--Div vacio para romper el float-->
+        <div class="final"></div>
+
+        <section id="spell">
+            <h2 class="titulo">Los tipos de Hechizos</h2>
+
+            <!--Las imagenes cuando esten grandes porque las pulsas-->
+            <div class="contenido">    
+                <div class="ruleta">
+                    <div class="cuenta">1 / 3</div>
+                    <img src="imagen/fugaz.png" >
+                </div>
+                
+                <div class="ruleta">
+                    <div class="cuenta">2 / 3</div>
+                    <img src="imagen/rapido.png" >
+                </div>
+                
+                <div class="ruleta">
+                    <div class="cuenta">3 / 3</div>
+                    <img src="imagen/lento.png" >
+                </div>
+            </div>
+            <!--Las imagenes en formato pequeño-->
+
+            <div class="mini">
+                <div class="columna">
+                 <img class="cursor" id="uno" src="imagen/fugaz.png" style="width:100px" onclick="currentSlide(1)" alt="Un hechizo fugaz">
+                </div>
+
+                <div class="columna">
+                 <img class="cursor" id="dos" src="imagen/rapido.png" style="width:100px" onclick="currentSlide(2)" alt="Un hechizo rapido">
+                </div>
+                
+                <div class="columna">
+                 <img class="cursor" id="tres" src="imagen/lento.png" style="width:100px" onclick="currentSlide(3)" alt="Un hechizo lento">
+                </div>
+            </div>
+            <!--El texto que esta justo debajo de las imagenes para explicar cada hechizo-->
+
+
+            <div class="columna" id="uno">
+                <h1 class="tituloX">Hechizos Fugazes</h1>
+                <p>Se pueden jugar en cualquier momento y se resuelven en ese momento, así el contrincante no puede defenderse.</p>
+            </div>
+
+            <div class="columna" id="dos">
+                <h1 class="tituloX">Hechizos Veloz</h1>
+                <p>Se pueden jugar en cualquier momento de la partida. Tu enemigo puede reaccionar utilizando sus hechos rápidos o de tipo ráfaga.</p>
+            </div>
+            
+            <div class="columna" id="tres">
+                <h1 class="tituloX">Hechizos Lentos</h1>
+                <p>Este tipo de hechizo solo se puede jugar fuera del combate. Los rivales pueden responder a ellos.</p>
+            </div>
+
+
+            <!--Otro div vacio para separar del footer-->
+            <div class="final"></div>
+
+        </section>
+
+        
+
+        <section id="more">
+            <div class="mitad" id="map">
+                <iframe id="mimapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.2561818206577!2d-4.556996085361356!3d36.740421478763366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d2ffe3a137%3A0xe095a3ea561debe2!2sCalle%20Frederick%20Terman%2C%2029590%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1582189691668!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="mitad" id="info">
+                <dl>
+                    <dt>Telefono:</dt>
+                    <dd>636 828 401</dd>
+                    <dt>Fax:</dt>
+                    <dd>123 45 67 89</dd>
+                    <dt>Direccion:</dt>
+                    <dd>C\ Yatusabespapito</dd>
+                    <dt>Correo electronico:</dt>
+                    <dd>juref99@gmail.com</dd>
+                </dl>
+            </div>
+        </section>
+        
+        <div class="final"></div>
+
+        <footer>
+            <h3>Buenas soy EL footer</h3>
+            <p>Podeis descargar <a href="https://playruneterra.com/es-es/">aqui</a> el juego</p>
+            <p>Pero antes necesitareis tener una cuenta de RIOT<p>
+            <p>La cual podreis descargar<a href="https://auth.riotgames.com/login#acr_values=urn%3Ariot%3Agold&client_id=blue-tape-web-prod&nonce=3Hdb_8bhUncUBr7HyffP4VqDVbSFnKKfq_JmLCa582U&prompt=signup&redirect_uri=https%3A%2F%2Fplayruneterra.com%2Fopt_in&response_type=token%20id_token&scope=account%20openid&state=c2lnbi11cA%3D%3D&ui_locales=es-es">Aqui</a></p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
